@@ -1,0 +1,21 @@
+.footer {
+    padding: 2rem;
+    height: 24.2rem;
+    margin: 0.8rem 0rem;
+    background: #115c50;
+    &__image {
+        width: 24.2rem;
+        height: 24.2rem;
+        margin: auto;
+        padding: 0.5rem;
+    }
+    &__image-- {
+        margin: 0 !important;
+    }
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contact__ {
+    margin: 0 !important;
+}

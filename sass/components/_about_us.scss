@@ -1,0 +1,63 @@
+.about_us {
+    margin-top: 11.7rem;
+    &__title {
+        padding-right: 10rem;
+        display: inline-block;
+        font-family: var(--font-text);
+        font-weight: 900;
+        font-size: 9.6rem;
+        line-height: 12rem;
+        border-bottom: 0.2rem solid #1a6c61;
+        color: #1a6c61;
+        margin-bottom: 4.5rem;
+    }
+    &__detail {
+        & > p {
+            font-weight: 400;
+            font-size: 3rem;
+            line-height: 3.7rem;
+            font-family: var(--font-family);
+            margin-bottom: 2rem;
+            color: #1a6c61;
+        }
+        margin-bottom: 7.8rem;
+    }
+    &__info {
+        display: flex;
+        margin-bottom: 5rem;
+        gap: 6.3rem;
+        &--image {
+            width: 27.6rem;
+            height: 27.6rem;
+            border-radius: 100rem;
+            overflow: hidden;
+            img {
+                object-fit: cover;
+                border-radius: 100rem;
+            }
+        }
+        &--content {
+            flex: 1;
+            color: #1a6c61;
+        }
+        &--name {
+            font-weight: 700;
+            font-size: 3rem;
+            line-height: 3.7rem;
+        }
+        &--child {
+            font-weight: 400;
+            font-size: 2rem;
+            padding: 1rem 0rem;
+            line-height: 2.8rem;
+        }
+        &--footer {
+            font-weight: 400;
+            font-size: 2.5rem;
+            & > p {
+                margin-bottom: 1.6rem;
+            }
+            line-height: 3rem;
+        }
+    }
+}

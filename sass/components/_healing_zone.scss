@@ -1,0 +1,56 @@
+.healing_zone {
+    &__description {
+        max-width: 62.6rem;
+        margin: auto;
+    }
+    &__image {
+        margin: auto;
+        width: 48.8rem;
+        height: 40.1rem;
+        background-size: cover;
+    }
+    &__container {
+        max-width: 157.5rem;
+        margin: auto;
+        padding: 6.3rem 5.1rem;
+        margin-bottom: 9.4rem;
+        background: #10b69b;
+        border-radius: 3rem;
+        & > div {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            gap: 8.4rem;
+        }
+        &--item {
+            & > div {
+                padding-top: 100%;
+                position: relative;
+                div {
+                    border-radius: 100rem;
+                    justify-content: center;
+                    img {
+                        transform: scale(0.5);
+                    }
+                    display: flex;
+                    align-items: center;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background-color: #f8d16e;
+                }
+            }
+            & > p {
+                width: 120%;
+                transform: translateX(-10%);
+                font-family: var(--font-text);
+                text-align: center;
+                font-weight: 400;
+                font-size: 3rem;
+                line-height: 4.5rem;
+                color: #c5f3e2;
+            }
+        }
+    }
+}

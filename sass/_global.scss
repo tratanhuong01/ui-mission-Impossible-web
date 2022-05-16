@@ -1,0 +1,59 @@
+.banner {
+    img {
+        width: 100%;
+        object-fit: contain;
+    }
+}
+
+.box {
+    &__text {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 2rem;
+        gap: 1rem;
+        width: 138.4rem;
+        height: 9.4rem;
+        margin: auto;
+        background: #1a6c61;
+        font-family: var(--font-text);
+        font-style: italic;
+        font-weight: 400;
+        font-size: 4rem;
+        line-height: 5rem;
+        color: #c5f3e2;
+        mix-blend-mode: normal;
+        border-radius: 1.2rem;
+    }
+}
+
+.style__title {
+    font-family: var(--font-text);
+    font-weight: 900;
+    font-size: 8rem;
+    line-height: 10rem;
+    height: 14.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1a6c61;
+}
+
+.contact {
+    padding: 0.5rem;
+    text-align: right;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: var(--font-text);
+    font-size: 4rem;
+    line-height: 5rem;
+    max-width: 60rem;
+    margin: auto;
+}
+
+.wrapper {
+    padding: 1.6rem;
+    max-width: 149.6rem;
+    margin: auto;
+}

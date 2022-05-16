@@ -1,0 +1,13 @@
+$color: #a7dec4;
+$black: "";
+$font-family: "Montserrat", sans-serif;
+$color-button: #10b69b;
+$font-text: "Simonetta", cursive;
+
+:root {
+    --color: #{$color};
+    --black: #{$black};
+    --font-family: #{$font-family};
+    --color-button: #{$color-button};
+    --font-text: #{$font-text};
+}

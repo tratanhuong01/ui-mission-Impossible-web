@@ -1,0 +1,13 @@
+.professional_help {
+    &__description {
+        max-width: 62.3rem;
+        margin: auto;
+        text-align: center;
+    }
+    &__image {
+        width: 45rem;
+        height: 45rem;
+        background-size: cover;
+        margin: auto;
+    }
+}
