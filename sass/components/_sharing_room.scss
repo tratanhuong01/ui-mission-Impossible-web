@@ -2,13 +2,14 @@
     &__image {
         width: 80rem;
         height: 60rem;
+        transform: scale(0.8);
         margin: auto;
         background-size: cover;
     }
     &__description {
         font-family: var(--font-text);
-        max-width: 53.7rem;
-        margin: auto;
+        max-width: 72rem;
+        margin: 4rem auto;
         font-style: italic;
         font-weight: 400;
         font-size: 4rem;

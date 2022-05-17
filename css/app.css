@@ -190,14 +190,15 @@ select {
 .sharing_room__image {
   width: 80rem;
   height: 60rem;
+  transform: scale(0.8);
   margin: auto;
   background-size: cover;
 }
 
 .sharing_room__description {
   font-family: var(--font-text);
-  max-width: 53.7rem;
-  margin: auto;
+  max-width: 72rem;
+  margin: 4rem auto;
   font-style: italic;
   font-weight: 400;
   font-size: 4rem;
@@ -434,31 +435,69 @@ select {
   padding-left: 2rem;
 }
 
-.header__menu ul {
+.header__menu > ul {
   display: flex;
   align-items: center;
   gap: 0;
 }
 
 @media (min-width: 1600px) {
-  .header__menu ul {
+  .header__menu > ul {
     gap: 2.5rem;
   }
 }
 
-.header__menu ul li.active a {
+.header__menu > ul > li.active a {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.header__menu ul li a {
+.header__menu > ul > li {
+  position: relative;
+}
+
+.header__menu > ul > li:hover .sub-menu {
+  display: block;
+}
+
+.header__menu > ul li a {
   font-weight: 700;
   font-size: 1.8rem;
   line-height: 2.2rem;
   padding: 0.8rem 1.6rem;
 }
 
-.header__menu ul li a:hover {
+.header__menu > ul li:hover a:hover {
   background: linear-gradient(0deg, rgba(42, 89, 254, 0.8), rgba(42, 89, 254, 0.8)), #ffffff;
+}
+
+.header__menu > ul li > .sub-menu {
+  width: 100%;
+  display: none;
+  padding-top: 3rem;
+  position: absolute;
+  top: 100%;
+  left: 0rem;
+}
+
+.header__menu > ul li > .sub-menu li a {
+  display: block;
+}
+
+.header__menu > ul li > .sub-menu > ul {
+  position: relative;
+  background-color: #ffffff;
+}
+
+.header__menu > ul li > .sub-menu > ul::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 1rem solid transparent;
+  border-right: 1rem solid transparent;
+  border-bottom: 1rem solid #ffffff;
+  border-top: 1rem solid transparent;
 }
 
 .header__button {
@@ -482,7 +521,7 @@ select {
 .footer {
   padding: 2rem;
   height: 24.2rem;
-  margin: 0.8rem 0rem;
+  margin: 0rem 0rem;
   background: #115c50;
   display: flex;
   align-items: center;
@@ -558,7 +597,7 @@ select {
 }
 
 .articles__main--image {
-  max-width: 118.6rem;
+  max-width: 90.6rem;
   margin: auto;
 }
 

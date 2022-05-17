@@ -21,16 +21,22 @@
     }
     &__menu {
         padding-left: 2rem;
-        ul {
+        & > ul {
             display: flex;
             align-items: center;
             gap: 0;
             @media (min-width: 1600px) {
                 gap: 2.5rem;
             }
-            li.active {
+            & > li.active {
                 a {
                     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                }
+            }
+            & > li {
+                position: relative;
+                &:hover .sub-menu {
+                    display: block;
                 }
             }
             li {
@@ -39,8 +45,38 @@
                     font-size: 1.8rem;
                     line-height: 2.2rem;
                     padding: 0.8rem 1.6rem;
+                }
+                &:hover a {
                     &:hover {
                         background: linear-gradient(0deg, rgba(42, 89, 254, 0.8), rgba(42, 89, 254, 0.8)), #ffffff;
+                    }
+                }
+                & > .sub-menu {
+                    li {
+                        a {
+                            display: block;
+                        }
+                    }
+                    width: 100%;
+                    display: none;
+                    padding-top: 3rem;
+                    position: absolute;
+                    top: 100%;
+                    left: 0rem;
+                    & > ul {
+                        position: relative;
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            bottom: 100%;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            border-left: 1rem solid transparent;
+                            border-right: 1rem solid transparent;
+                            border-bottom: 1rem solid #ffffff;
+                            border-top: 1rem solid transparent;
+                        }
+                        background-color: #ffffff;
                     }
                 }
             }
