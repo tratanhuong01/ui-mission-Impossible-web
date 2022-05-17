@@ -37,9 +37,7 @@ img {
 }
 
 a {
-  font-weight: 700;
-  font-size: 1.8rem;
-  line-height: 2.2rem;
+  text-decoration: none;
 }
 
 button,
@@ -55,6 +53,7 @@ select {
   --font-family: Montserrat, sans-serif;
   --color-button: #10b69b;
   --font-text: Simonetta, cursive;
+  --color-header: #aae1c7;
 }
 
 .banner img {
@@ -225,6 +224,10 @@ select {
   height: 66.8rem;
 }
 
+.sharing_room__banner > img {
+  width: 100%;
+}
+
 .sharing_room__banner--second {
   display: flex;
   justify-content: center;
@@ -232,6 +235,10 @@ select {
   margin: auto;
   margin-bottom: 10rem;
   height: 38.9rem;
+}
+
+.sharing_room__banner--second > img {
+  width: 100%;
 }
 
 .sharing_room__line {
@@ -303,6 +310,7 @@ select {
 }
 
 .sharing_room__comment {
+  padding: 0rem 1.5rem;
   max-width: 156.8rem;
   margin: auto;
   margin-bottom: 10rem;
@@ -397,6 +405,7 @@ select {
 }
 
 .header {
+  background-color: var(--color-header);
   height: 12.3rem;
   display: flex;
   align-items: center;
@@ -405,8 +414,14 @@ select {
 }
 
 .header__logo {
-  width: 8.8rem;
-  height: 8.8rem;
+  width: 88px;
+  height: 88px;
+}
+
+.header__logo a {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .header__logo img {
@@ -436,6 +451,9 @@ select {
 }
 
 .header__menu ul li a {
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
   padding: 0.8rem 1.6rem;
 }
 
@@ -518,6 +536,36 @@ select {
   background-size: cover;
 }
 
+.articles__main--child {
+  font-family: var(--font-text);
+  font-weight: 400;
+  font-size: 8rem;
+  line-height: 10rem;
+  text-align: center;
+  color: #1a6c61;
+}
+
+.articles__main--description {
+  max-width: 118.6rem;
+  margin: 5.8rem auto 1rem auto;
+  font-family: var(--font-text);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 5rem;
+  color: #1a6c61;
+  mix-blend-mode: normal;
+}
+
+.articles__main--image {
+  max-width: 118.6rem;
+  margin: auto;
+}
+
+.articles__main--image img {
+  width: 100%;
+}
+
 .professional_help__description {
   max-width: 62.3rem;
   margin: auto;
@@ -529,5 +577,37 @@ select {
   height: 45rem;
   background-size: cover;
   margin: auto;
+}
+
+.professional_help__banner {
+  width: 78rem;
+  height: 75.5rem;
+  margin: auto;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem 0rem;
+}
+
+.pagination.control {
+  transform: rotate(90deg);
+}
+
+.pagination a {
+  width: 4rem;
+  font-weight: 100;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.pagination a.active {
+  background-color: #ffffff;
+  color: #2a59fe;
 }
 /*# sourceMappingURL=app.css.map */

@@ -3,11 +3,12 @@ $black: "";
 $font-family: "Montserrat", sans-serif;
 $color-button: #10b69b;
 $font-text: "Simonetta", cursive;
-
+$color-header: #aae1c7;
 :root {
     --color: #{$color};
     --black: #{$black};
     --font-family: #{$font-family};
     --color-button: #{$color-button};
     --font-text: #{$font-text};
+    --color-header: #{$color-header};
 }

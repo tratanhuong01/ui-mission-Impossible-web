@@ -31,6 +31,9 @@
         max-width: 156.8rem;
         margin: auto;
         height: 66.8rem;
+        & > img {
+            width: 100%;
+        }
         &--second {
             display: flex;
             justify-content: center;
@@ -38,6 +41,9 @@
             margin: auto;
             margin-bottom: 10rem;
             height: 38.9rem;
+            & > img {
+                width: 100%;
+            }
         }
     }
     &__line {
@@ -102,6 +108,7 @@
         }
     }
     &__comment {
+        padding: 0rem 1.5rem;
         max-width: 156.8rem;
         margin: auto;
         margin-bottom: 10rem;

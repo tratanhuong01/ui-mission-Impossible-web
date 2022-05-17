@@ -27,4 +27,32 @@
         margin-bottom: 2.4rem;
         background-size: cover;
     }
+    &__main {
+        &--child {
+            font-family: var(--font-text);
+            font-weight: 400;
+            font-size: 8rem;
+            line-height: 10rem;
+            text-align: center;
+            color: #1a6c61;
+        }
+        &--description {
+            max-width: 118.6rem;
+            margin: 5.8rem auto 1rem auto;
+            font-family: var(--font-text);
+            font-style: italic;
+            font-weight: 400;
+            font-size: 4rem;
+            line-height: 5rem;
+            color: #1a6c61;
+            mix-blend-mode: normal;
+        }
+        &--image {
+            max-width: 118.6rem;
+            margin: auto;
+            img {
+                width: 100%;
+            }
+        }
+    }
 }
